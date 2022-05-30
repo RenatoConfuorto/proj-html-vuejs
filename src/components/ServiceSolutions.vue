@@ -1,5 +1,5 @@
 <template>
-  <div class="main-cnt-section container">
+  <section class="main-cnt-section container">
     <h3>We are professionals</h3>
     <h2>Full-Service Solution</h2>
 <!-- ..\assets\img -->
@@ -22,7 +22,7 @@
 
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

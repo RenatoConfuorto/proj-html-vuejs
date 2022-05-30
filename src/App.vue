@@ -5,6 +5,7 @@
     <main>
       <AppTestimonials/>
       <ServiceSolutions/>
+      <AppJumbotron/>
     </main>
   </div>
 </template>
@@ -13,6 +14,7 @@
 import AppHeader from "./components/AppHeader.vue";
 import AppTestimonials from "./components/AppTestimonials.vue";
 import ServiceSolutions from "./components/ServiceSolutions.vue";
+import AppJumbotron from "./components/AppJumbotron.vue";
 
 export default {
   name: 'App',
@@ -20,6 +22,7 @@ export default {
     AppHeader,
     AppTestimonials,
     ServiceSolutions,
+    AppJumbotron,
   }
 }
 </script>
