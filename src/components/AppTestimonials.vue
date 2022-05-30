@@ -19,7 +19,7 @@ export default {
 @import "../style/variables.scss";
 
 .main-cnt-section{
-  background-color: #e9e9e9;
+  background-color: $background-color-section;
 
   .text-container{
     width: 50%;

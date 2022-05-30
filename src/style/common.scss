@@ -13,6 +13,7 @@
 }
 
 .btn{
+  display: inline-block;
   background-color: $brand-secondary-color;
   text-decoration: none;
   text-transform: uppercase;
@@ -53,9 +54,12 @@
 
     .card{
       width: 30%;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
   
       .img-wrapper{
-        margin: 5px;
+        margin-bottom: 10px;
   
         img{
           width: 100%;
@@ -63,17 +67,18 @@
       }
 
       &-text{
-        margin: 5px;
-        padding: 4px 8px;
+        padding: 20px 10px;
+        flex-grow: 1;
 
         h3{
-          color: brand-secondary-color;
-          font-size: .8rem;
-          margin-bottom: 5px;
+          color: $brand-secondary-color;
+          font-size: 1.2rem;
+          margin-bottom: 15px;
         }
 
         p{
-          font-size: .6rem;
+          font-size: .8rem;
+          line-height: 1.6;
           margin-bottom: 5px;
         }
       }
