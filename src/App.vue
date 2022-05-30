@@ -1,13 +1,16 @@
 <template>
   <div id="app">
+    <AppHeader/>
   </div>
 </template>
 
 <script>
+import AppHeader from "./components/AppHeader.vue";
 
 export default {
   name: 'App',
   components: {
+    AppHeader,
   }
 }
 </script>
@@ -15,6 +18,10 @@ export default {
 <style lang="scss">
 @import "style/common.scss";
 @import "style/variables.scss";
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
 
 
+#app{
+  color: black;
+}
 </style>
