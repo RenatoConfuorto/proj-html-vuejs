@@ -27,15 +27,21 @@
     </div>
     <div class="footer-bottom">
       <div class="container-small">
-
+        <p>&copy; Copyright 2012 - 2020 | Avada Theme by ThemeFusion | All Rights Reserved | Powered By WordPress</p>
+        <SocialLinks/>
       </div>
     </div>
   </footer>
 </template>
 
 <script>
+import SocialLinks from "./SocialLinks.vue";
+
 export default {
   name: 'AppFooter',
+  components: {
+    SocialLinks,
+  },
   data(){
     return{
       activeElement: 0,
@@ -175,6 +181,13 @@ footer{
 
   .footer-bottom{
     padding: 1rem 0;
+    text-align: center;
+
+    color: white;
+    p{
+      font-size: .7rem;
+      margin-bottom: 10px;
+    }
 
   }
 }
