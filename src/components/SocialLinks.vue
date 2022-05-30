@@ -48,8 +48,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../style/variables.scss";
+
 .socials{
-  color: white;
+  color: $text-primary-color;
   background-color: transparent;
 
   ul{
@@ -59,7 +61,7 @@ export default {
       margin: 0 5px;
       
       a{
-        color: white;
+        color: $text-primary-color;
       }
     }
   }

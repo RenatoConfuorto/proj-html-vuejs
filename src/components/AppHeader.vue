@@ -12,26 +12,37 @@
       </div>
     </div>
 
-      <div class="navbar">
-        <div class="container">
-          <div class="logo-wrapper">
-            <img src="../assets/img/avada-movers-logo.png" alt="Avada Movers">
-          </div>
-
-        <nav>
-          <ul class="line-list">
-            <li v-for="(element, index) in navElements" :key="index">
-              <a :href="element.url" :class="{active: index == activeElement}">{{ element.text }}</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="btn-wrapper">
-          <a href="#" class="btn">Free quote</a>
+    <div class="navbar">
+      <div class="container">
+        <div class="logo-wrapper">
+          <img src="../assets/img/avada-movers-logo.png" alt="Avada Movers">
         </div>
-        </div>
+
+      <nav>
+        <ul class="line-list">
+          <li v-for="(element, index) in navElements" :key="index">
+            <a :href="element.url" :class="{active: index == activeElement}">{{ element.text }}</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="btn-wrapper">
+        <a href="#" class="btn">Free quote</a>
       </div>
+      </div>
+    </div>
 
+    <div class="motto">
+      <div>
+        <h3>Moving without the hassle</h3>
+        <h1>We make it simple</h1>
+        <h3>professional service with quality and customer satisfaction</h3>
+      </div>
+    </div>
+
+    <div class="free-quote">
+      <i class="fas fa-paper-plane"></i> Get a free quote online now!
+    </div>
 
   </header>
 </template>
@@ -83,7 +94,12 @@ export default {
 
 header{
   width: 100%;
-  
+  height: 70vh;
+  background-image: url(../assets/img/avada-movers-homeherobackground-final.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
     
     .cta{
       background-color: $brand-primary-color;
@@ -96,7 +112,7 @@ header{
         align-items: center;
 
         .call-section{
-          color: white;
+          color: $text-primary-color;
           font-size: .8rem;
           
           i{
@@ -108,6 +124,7 @@ header{
 
   .navbar{
     height: $app-header-navbar-height;
+    background-color: transparent;
 
     .container{
       height: 100%;
@@ -136,7 +153,7 @@ header{
               padding: 5px;
               text-decoration: none;
               text-transform: capitalize;
-              color: black;
+              color: $text-secondary-color-dark;
               font-size: .9rem;
               font-weight: 600;
 
@@ -150,6 +167,41 @@ header{
 
     }
 
+
+  }
+
+  .motto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    div{
+      text-align: center;
+      text-transform: uppercase;
+
+      h3{
+        font-size: .8rem;
+        color: $text-secondary-color;
+        margin-bottom: 10px;
+      }
+
+      h1{
+        font-size: 2.5rem;
+        color: $text-secondary-color-dark;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .free-quote{
+    height: 4rem;
+    background-color: $brand-secondary-color;
+    color: $text-primary-color;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .8rem;
+    line-height: 4rem;
   }
 
 }
