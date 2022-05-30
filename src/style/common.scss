@@ -17,7 +17,8 @@
   background-color: $brand-secondary-color;
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
+  color: $text-primary-color;
+  font-weight: bold;
   font-size: .8rem;
   padding: 10px 20px;
   border-radius: 20px;

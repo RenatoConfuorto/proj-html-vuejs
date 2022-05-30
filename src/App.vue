@@ -7,6 +7,7 @@
       <ServiceSolutions/>
       <AppJumbotron/>
       <ReferenceCustomers/>
+      <QuoteRequest/>
     </main>
   </div>
 </template>
@@ -17,6 +18,7 @@ import AppTestimonials from "./components/AppTestimonials.vue";
 import ServiceSolutions from "./components/ServiceSolutions.vue";
 import AppJumbotron from "./components/AppJumbotron.vue";
 import ReferenceCustomers from "./components/ReferenceCustomers.vue";
+import QuoteRequest from "./components/QuoteRequest.vue";
 
 export default {
   name: 'App',
@@ -26,6 +28,7 @@ export default {
     ServiceSolutions,
     AppJumbotron,
     ReferenceCustomers,
+    QuoteRequest,
   }
 }
 </script>
