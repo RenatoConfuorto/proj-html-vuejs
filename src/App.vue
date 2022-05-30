@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <AppHeader/>
+    <div class="up-btn">
+      <a href="#up"><i class="fas fa-chevron-up"></i></a>
+    </div>
+    <AppHeader id="up"/>
 
     <main>
       <AppTestimonials/>
@@ -42,8 +45,21 @@ export default {
 @import "style/variables.scss";
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 
+.up-btn{
+  background-color: #6b6b6b;
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+  width: 2.5rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 
-#app{
-  color: black;
+  i{
+    color: $text-primary-color;
+    padding: .4rem;
+  }
 }
 </style>
