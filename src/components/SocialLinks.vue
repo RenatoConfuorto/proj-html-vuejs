@@ -1,6 +1,6 @@
 <template>
   <div class="socials">
-    <ul>
+    <ul class="line-list">
       <li v-for="(element, index) in socialLinks" :key="index">
         <a :href="element.url" :title="element.social">
           <i :class="element.iconClass"></i>
@@ -53,11 +53,9 @@ export default {
   background-color: transparent;
 
   ul{
-    list-style-type: none;
     font-size: .8rem;
 
     li{
-      display: inline-block;
       margin: 0 5px;
       
       a{
