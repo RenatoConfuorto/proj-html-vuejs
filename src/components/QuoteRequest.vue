@@ -1,6 +1,6 @@
 <template>
   <section class="main-cnt-section">
-    <div class="text-container">
+    <div class="container-small">
       <h2>Request A Free Quote</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, suscipit provident labore sunt aliquid nulla tempore, officiis accusamus qui temporibus doloremque voluptate dolor ex. Blanditiis ab nulla aliquid maxime nam?</p>
 
@@ -23,14 +23,9 @@ naeme: 'QuoteRequest',
   background-size: cover;
   background-position: center;
 
-  .text-container{
-    width: 50%;
-    margin: 0 auto;
-    
-    p{
-      color: $text-secondary-color;
-      margin-bottom: 2rem;
-    }
+  p{
+    color: $text-secondary-color;
+    margin-bottom: 2rem;
   }
 }
 

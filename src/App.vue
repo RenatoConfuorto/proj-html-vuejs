@@ -9,6 +9,8 @@
       <ReferenceCustomers/>
       <QuoteRequest/>
     </main>
+
+    <AppFooter/>
   </div>
 </template>
 
@@ -19,6 +21,7 @@ import ServiceSolutions from "./components/ServiceSolutions.vue";
 import AppJumbotron from "./components/AppJumbotron.vue";
 import ReferenceCustomers from "./components/ReferenceCustomers.vue";
 import QuoteRequest from "./components/QuoteRequest.vue";
+import AppFooter from "./components/AppFooter.vue";
 
 export default {
   name: 'App',
@@ -29,6 +32,7 @@ export default {
     AppJumbotron,
     ReferenceCustomers,
     QuoteRequest,
+    AppFooter,
   }
 }
 </script>

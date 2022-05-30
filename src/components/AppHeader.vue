@@ -33,7 +33,7 @@
     </div>
 
     <div class="motto">
-      <div>
+      <div class="container-small">
         <h3>Moving without the hassle</h3>
         <h1>We make it simple</h1>
         <h3>professional service with quality and customer satisfaction</h3>
@@ -176,7 +176,7 @@ header{
     align-items: center;
     flex-grow: 1;
 
-    div{
+    .container-small{
       text-align: center;
       text-transform: uppercase;
 
