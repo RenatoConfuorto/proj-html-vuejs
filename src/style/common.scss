@@ -29,3 +29,54 @@
     display: inline-block;
   }
 }
+
+.main-cnt-section{
+  padding: 5rem 0;
+  text-align: center;
+
+  h3{
+    color: $text-secondary-color;
+    font-size: .8rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  h2{
+    color: $brand-primary-color;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .card-container{
+    display: flex;
+    justify-content: space-between;
+
+    .card{
+      width: 30%;
+  
+      .img-wrapper{
+        margin: 5px;
+  
+        img{
+          width: 100%;
+        }
+      }
+
+      &-text{
+        margin: 5px;
+        padding: 4px 8px;
+
+        h3{
+          color: brand-secondary-color;
+          font-size: .8rem;
+          margin-bottom: 5px;
+        }
+
+        p{
+          font-size: .6rem;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
