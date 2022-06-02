@@ -43,6 +43,7 @@ export default {
 <style lang="scss">
 @import "style/common.scss";
 @import "style/variables.scss";
+@import "@fontsource/roboto/scss/mixins.scss";
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 
 .up-btn{
